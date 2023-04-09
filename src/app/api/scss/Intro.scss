@@ -1,0 +1,96 @@
+@import './Variable.scss';
+
+
+.main {
+    height: 130vh;
+    width: 100%;
+    padding: 0.2rem 0.3rem;
+    background-color: $color-black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        // Header Section of Intro
+
+        header {
+            height: 10%;
+            width: 100%;
+            text-align: center;
+            margin: 2rem auto;
+
+            a {
+                color: $color-white;
+
+                span {
+                    padding: 0.1rem 1.25rem;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    letter-spacing: 5px;
+                }
+                p {
+                    letter-spacing: 3px;
+                    font-weight: 700;
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        // Main Section of Intro
+
+        main {
+            height: 60%;
+            width: 100%;
+            
+            
+            .service {
+                height: 70%;
+                width: 100%;
+                border-radius: 30px;
+                background-color: $color-blue;
+            }
+
+            .w-about {
+                padding: 0.2rem 0rem;
+                margin: 0.2rem 0rem;
+                height: 30%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                .work {
+                    height: 100%;
+                    width: 50%;
+                    border-radius: 50%;
+                    background-color: $color-white;
+                }
+                
+                .about {
+                    height: 100%;
+                    width: 49%;
+                    border-radius: 50%;
+                    background-color: $color-white;
+                }
+            }
+
+            .contact {
+                height: 40%;
+                width: 100%;
+                border-radius: 30px;
+                background-color: $color-yellow;
+
+            }
+        }
+
+
+    }
+}
