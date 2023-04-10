@@ -1,5 +1,7 @@
 import React from 'react';
+
 import './../scss/Intro.scss';
+import './../scss/global.scss';
 
 const intro = () => {
     return (
@@ -14,7 +16,7 @@ const intro = () => {
 
                 <main>
 
-                    <div className="service"></div>
+                    <div className="service">service</div>
 
                     <div className='wrapper'>
                         <div className='w-about'>

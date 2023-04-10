@@ -1,9 +1,9 @@
 @import "./Variable.scss";
 
 .main {
-    height: 130vh;
+    height: 150vh;
     width: 100%;
-    padding: 0.2rem 0.3rem;
+    padding: 0.5rem 0.3rem;
     background-color: $color-black;
     display: flex;
     flex-direction: column;
@@ -17,6 +17,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        // margin: 3rem;
 
         // Header Section of Intro
 
@@ -47,11 +48,12 @@
         // Main Section of Intro
 
         main {
-            height: 60%;
+            height: 90%;
             width: 100%;
+            margin: 0.4rem 0rem;
 
             .service {
-                height: 70%;
+                height: 50%;
                 width: 100%;
                 border-radius: 30px;
                 background-color: $color-blue;
@@ -64,7 +66,7 @@
                 margin: 0.2rem 0rem;
 
                 .w-about {
-                    height: 100%;
+                    height: 70%;
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
@@ -86,7 +88,7 @@
                 }
 
                 .contact {
-                    margin: 0.5rem 0rem;
+                    margin: 0.3rem 0rem;
                     height: 100%;
                     width: 100%;
                     border-radius: 30px;
