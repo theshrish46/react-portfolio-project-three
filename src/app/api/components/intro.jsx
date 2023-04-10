@@ -13,16 +13,17 @@ const intro = () => {
                 </header>
 
                 <main>
-                    <div className="service">
-                        
-                    </div>
 
-                    <div className='w-about'>
-                        <div className="work"></div>
-                        <div className="about"></div>
-                    </div>
+                    <div className="service"></div>
 
-                    <div className='contact'></div>
+                    <div className='wrapper'>
+                        <div className='w-about'>
+                            <div className="work"></div>
+                            <div className="about"></div>
+                        </div>
+
+                        <div className='contact'></div>
+                    </div>
                 </main>
             </div>
         </div>

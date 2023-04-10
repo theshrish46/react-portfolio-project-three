@@ -1,5 +1,4 @@
-@import './Variable.scss';
-
+@import "./Variable.scss";
 
 .main {
     height: 130vh;
@@ -36,6 +35,7 @@
                     font-size: 2rem;
                     letter-spacing: 5px;
                 }
+
                 p {
                     letter-spacing: 3px;
                     font-weight: 700;
@@ -49,8 +49,7 @@
         main {
             height: 60%;
             width: 100%;
-            
-            
+
             .service {
                 height: 70%;
                 width: 100%;
@@ -58,39 +57,42 @@
                 background-color: $color-blue;
             }
 
-            .w-about {
-                padding: 0.2rem 0rem;
-                margin: 0.2rem 0rem;
+            .wrapper {
                 height: 30%;
                 width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                
-                .work {
-                    height: 100%;
-                    width: 50%;
-                    border-radius: 50%;
-                    background-color: $color-white;
-                }
-                
-                .about {
-                    height: 100%;
-                    width: 49%;
-                    border-radius: 50%;
-                    background-color: $color-white;
-                }
-            }
+                padding: 0.2rem 0rem;
+                margin: 0.2rem 0rem;
 
-            .contact {
-                height: 40%;
-                width: 100%;
-                border-radius: 30px;
-                background-color: $color-yellow;
+                .w-about {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
 
+                    .work {
+                        height: 100%;
+                        width: 50%;
+                        border-radius: 50%;
+                        background-color: $color-white;
+                    }
+
+                    .about {
+                        height: 100%;
+                        width: 49%;
+                        border-radius: 50%;
+                        background-color: $color-white;
+                    }
+                }
+
+                .contact {
+                    margin: 0.5rem 0rem;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 30px;
+                    background-color: $color-yellow;
+                }
             }
         }
-
-
     }
 }
