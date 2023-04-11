@@ -3,14 +3,14 @@
 .main {
   height: 120vh;
   width: 100%;
-  padding: 0.5rem 0.3rem;
+  padding: 0.9rem 0.3rem;
   background-color: $color-black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  .container {
+  .container-intro {
     height: 100%;
     width: 100%;
     display: flex;
@@ -99,7 +99,7 @@
         height: 30%;
         width: 100%;
         padding: 0.2rem 0rem;
-        margin: 0.7rem 0rem;
+        margin: 0.9rem 0rem;
 
         .w-about {
           height: 70%;
@@ -139,7 +139,7 @@
         }
 
         .contact {
-          margin: 0.7rem 0rem;
+          margin: 1rem 0rem;
           height: 100%;
           width: 100%;
           border-radius: 30px;

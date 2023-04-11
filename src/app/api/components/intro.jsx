@@ -10,7 +10,7 @@ import './../scss/global.scss';
 const intro = () => {
     return (
         <div className='main'>
-            <div className="container">
+            <div className="container-intro">
                 <header>
                     <a href="#">
                         <span>the</span>

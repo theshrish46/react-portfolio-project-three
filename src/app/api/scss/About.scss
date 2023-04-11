@@ -2,14 +2,14 @@
 @import './global.scss';
 
 
-.container {
+.container-about {
     height: 300vh;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: $color-black;
-    padding: 0.5rem 0rem;
+    padding: 0.7rem 0rem;
     
     .work {
         margin: 2rem 0.2rem;
@@ -18,7 +18,7 @@
 
         .intro {
             background-color: $color-gray;
-            height: 17%;
+            height: 18%;
             width: 100%;
             padding: 1.2rem;
             border-radius: 30px;

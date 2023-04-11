@@ -14,7 +14,7 @@ import './../scss/global.scss';
 
 const about = () => {
     return (
-        <div className='container'>
+        <div className='container-about'>
             <div className="work">
                 <div className="intro">We provide clients with stunnign crafty web solutions, developed with skil & passion.</div>
 
