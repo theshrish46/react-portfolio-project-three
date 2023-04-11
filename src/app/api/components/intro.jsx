@@ -1,5 +1,8 @@
 import React from 'react';
 import { AiOutlineArrowDown } from 'react-icons/ai';
+import { BsLaptop } from 'react-icons/bs';
+import { BiBuildings } from 'react-icons/bi';
+import { AiOutlineSend } from 'react-icons/ai';
 
 import './../scss/Intro.scss';
 import './../scss/global.scss';
@@ -19,6 +22,7 @@ const intro = () => {
 
                     <div className="service">
                         <a href="#" className='service-link'>
+                            <span className='service-des'>I build stunning and responsive Web Applications.</span>
                             <div className="all">
 
                                 <div className="top">
@@ -37,11 +41,20 @@ const intro = () => {
 
                     <div className='wrapper'>
                         <div className='w-about'>
-                            <div className="work"></div>
-                            <div className="about"></div>
+                            <div className="work">
+                                <BsLaptop />
+                                <span>Work</span>
+                            </div>
+                            <div className="about">
+                                <BiBuildings />
+                                <span>About</span>
+                            </div>
                         </div>
 
-                        <div className='contact'></div>
+                        <div className='contact'>
+                            <AiOutlineSend />
+                            <span>Contact Us</span>
+                        </div>
                     </div>
                 </main>
             </div>

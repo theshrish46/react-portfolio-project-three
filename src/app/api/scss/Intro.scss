@@ -1,112 +1,158 @@
 @import "./Variable.scss";
 
 .main {
-    height: 120vh;
+  height: 120vh;
+  width: 100%;
+  padding: 0.5rem 0.3rem;
+  background-color: $color-black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    height: 100%;
     width: 100%;
-    padding: 0.5rem 0.3rem;
-    background-color: $color-black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    // margin: 3rem;
 
-    .container {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        // margin: 3rem;
+    // Header Section of Intro
 
-        // Header Section of Intro
+    header {
+      height: 10%;
+      width: 100%;
+      text-align: center;
+      margin: 2rem auto;
 
-        header {
-            height: 10%;
-            width: 100%;
-            text-align: center;
-            margin: 2rem auto;
+      a {
+        color: $color-white;
 
-            a {
-                color: $color-white;
-
-                span {
-                    padding: 0.1rem 1.25rem;
-                    font-weight: 500;
-                    font-size: 2rem;
-                    letter-spacing: 5px;
-                }
-
-                p {
-                    letter-spacing: 3px;
-                    font-weight: 700;
-                    font-size: 3rem;
-                }
-            }
+        span {
+          padding: 0.1rem 1.25rem;
+          font-weight: 500;
+          font-size: 2rem;
+          letter-spacing: 5px;
         }
 
-        // Main Section of Intro
-
-        main {
-            height: 90%;
-            width: 100%;
-            margin: 0.5rem 0rem;
-
-            .service {
-                height: 50%;
-                width: 100%;
-                border-radius: 30px;
-                background-color: $color-blue;
-                padding: 2rem 0rem;
-
-                .service-link {
-
-                    .all {
-                        width: 320px;
-                        margin: 0rem auto;
-                        color: $color-white;
-                        font-size: 1.4rem;
-                        font-weight: 500;
-                    }
-                }
-            }
-
-            .wrapper {
-                height: 30%;
-                width: 100%;
-                padding: 0.2rem 0rem;
-                margin: 0.5rem 0rem;
-
-                .w-about {
-                    height: 70%;
-                    width: 100%;
-                    display: flex;
-                    justify-content: space-evenly;
-                    align-items: center;
-
-                    .work {
-                        height: 180px;
-                        width: 200px;
-                        border-radius: 50%;
-                        background-color: $color-white;
-                    }
-
-                    .about {
-                        height: 180px;
-                        width: 200px;
-                        border-radius: 50%;
-                        background-color: $color-white;
-                    }
-                }
-
-                .contact {
-                    margin: 0.7rem 0rem;
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 30px;
-                    background-color: $color-yellow;
-                }
-            }
+        p {
+          letter-spacing: 3px;
+          font-weight: 700;
+          font-size: 3rem;
         }
+      }
     }
+
+    // Main Section of Intro
+
+    main {
+      height: 90%;
+      width: 100%;
+      margin: 0.5rem 0rem;
+
+      .service {
+        height: 50%;
+        width: 100%;
+        border-radius: 30px;
+        background-color: $color-blue;
+        padding: 2rem 0rem;
+
+        .service-link {
+          position: relative;
+
+          .service-des {
+            width: 100%;
+            display: inline;
+            overflow-x: scroll;
+            padding: 0rem;
+            margin: 0rem;
+            position: absolute;
+            transform: translateY(70%);
+            font-size: 2rem;
+            color: $color-white;
+          }
+
+          .all {
+            width: 320px;
+            height: 100%;
+            margin: 0rem auto;
+            color: $color-white;
+            font-size: 1.3rem;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .top,
+            .down {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+          }
+        }
+      }
+
+      .wrapper {
+        height: 30%;
+        width: 100%;
+        padding: 0.2rem 0rem;
+        margin: 0.7rem 0rem;
+
+        .w-about {
+          height: 70%;
+          width: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+
+          .work {
+            height: 180px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: $color-white;
+            color: $color-black;
+            font-size: 1.3rem;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .about {
+            height: 180px;
+            width: 200px;
+            border-radius: 50%;
+            // background-color: $color-gray;
+            background-color: rgba(37, 36, 36, 0.956);
+            color: $color-white;
+            font-size: 1.3rem;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        .contact {
+          margin: 0.7rem 0rem;
+          height: 100%;
+          width: 100%;
+          border-radius: 30px;
+          background-color: $color-yellow;
+          color: $color-black;
+          font-size: 1.3rem;
+          font-weight: 900;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
 }
