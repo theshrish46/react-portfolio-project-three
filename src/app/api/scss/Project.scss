@@ -1,108 +1,188 @@
-@import './Variable.scss';
-@import './global.scss';
-
-
+@import "./Variable.scss";
+@import "./global.scss";
 
 .container {
-    height: 130vh;
+  height: 130vh;
+  width: 100%;
+  background-color: $color-white;
+
+  .main {
+    padding: 0.5rem 0.2rem;
+    height: 100%;
     width: 100%;
-    background-color: $color-white;
-    
-    .main {
-        padding: 0.5rem 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .working {
+      margin: 0.5rem 0rem;
+      height: 40%;
+      width: 100%;
+      background-color: $color-white;
+      border-radius: 30px;
+
+      .work-link {
+        width: 320px;
         height: 100%;
+        margin: 0rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        .top,
+        .mid,
+        .down {
+          width: 100%;
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: $color-black;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .mid {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          font-weight: 900;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    //  Project Section
+
+    .projects {
+      height: 60%;
+      width: 100%;
+      margin: 0.2rem 0rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .project-top {
+        margin: 0.1rem 0rem;
+        height: 50%;
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        .working {
-            margin: 0.5rem 0rem;
-            height: 40%;
+        .one,
+        .two {
+          width: 49.7%;
+          height: 100%;
+          border-radius: 90px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+
+          .top {
+            // padding: 2rem 1rem 1rem 1rem;
             width: 100%;
-            background-color: $color-white;
-            border-radius: 30px;
-            
-            .work-link {
-                width: 320px;
-                height: 100%;
-                margin: 0rem auto;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: flex-start;
-
-                .top, .mid, .down {
-                    width: 100%;
-                    font-size: 1.3rem;
-                    font-weight: 700;
-                    color: $color-black;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                }
-                .mid {
-                    display: flex;
-                    justify-content: center;
-                    align-content: center;
-                    font-weight: 900;
-                    font-size: 2rem;
-                }
-            }
-        }
-
-        //  Project Section
-
-        .projects {
-            height: 60%;
-            width: 100%;
-            margin: 0.2rem 0rem;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: $color-black;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            
-            .project-top {
-                margin: 0.1rem 0rem;
-                height: 50%;
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                
-                .one, .two {
-                    width: 49.7%;
-                    height: 100%;
-                    border-radius: 90px;
-                }
-                .one {
-                    background-color: $color-light-blue;
-                }
-                .two {
-                    background-color: $color-dark-green;
-                }
-            }
-            .project-down {
-                margin: 0.1rem 0rem;
-                height: 50%;
-                width: 100%;
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
 
-                .three, .four {
-                    width: 49.7%;
-                    height: 100%;
-                    border-radius: 90px;
-                }
-                .three {
-                    background-color: $color-light-green;
-                }
-                .four {
-                    background-color: $color-purple;
-                }
+            .top-right {
+              display: none;
             }
+          }
+          .mid {
+            // padding: 1rem 1rem 1rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            font-weight: 900;
+            font-size: 1.95rem;
+          }
+          .down {
+            width: 100%;
+            font-size: 1.7rem;
+            font-weight: 900;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .down-left {
+                display: none;
+            }
+          }
+
         }
+        .one {
+          background-color: $color-light-blue;
+        }
+        .two {
+          background-color: $color-dark-green;
+        }
+      }
+      .project-down {
+        margin: 0.1rem 0rem;
+        height: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
 
+        .three,
+        .four {
+          width: 49.7%;
+          height: 100%;
+          border-radius: 90px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+
+          .top {
+            // padding: 2rem 1rem 1rem 1rem;
+            width: 100%;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: $color-black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .top-right {
+              display: none;
+            }
+          }
+          .mid {
+            // padding: 1rem 1rem 1rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            font-weight: 900;
+            font-size: 1.95rem;
+          }
+          .down {
+            width: 100%;
+            font-size: 1.7rem;
+            font-weight: 900;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .down-left {
+                display: none;
+            }
+          }
+        }
+        .three {
+          background-color: $color-light-green;
+        }
+        .four {
+          background-color: $color-purple;
+        }
+      }
     }
+  }
 }
