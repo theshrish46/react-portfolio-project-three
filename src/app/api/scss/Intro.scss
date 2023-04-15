@@ -61,17 +61,21 @@
 
         .service-link {
           position: relative;
+          overflow-x: hidden;
 
           .service-des {
-            width: 100%;
-            display: inline;
-            overflow-x: scroll;
+            width: 200px;
+            display: block;
+            overflow-x: hidden;
             padding: 0rem;
             margin: 0rem;
             position: absolute;
-            transform: translateY(70%);
+            top: 40%;
+            left: 30%;
             font-size: 2rem;
             color: $color-white;
+            animation: slideLeft 9s ease-in 0.3s infinite normal;
+            animation-fill-mode: forwards;
           }
 
           .all {
@@ -155,4 +159,60 @@
       }
     }
   }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(-600px);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .main {
+    height: 120vh;
+    width: 100%;
+    padding: 0.9rem 0.3rem;
+    background-color: $color-black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    .container-intro {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      // margin: 3rem;
+  
+      // Header Section of Intro
+  
+      header {
+        height: 10%;
+        width: 100%;
+        text-align: center;
+        margin: 2rem auto;
+  
+        a {
+          color: $color-white;
+  
+          span {
+            padding: 0.1rem 1.25rem;
+            font-weight: 500;
+            font-size: 2rem;
+            letter-spacing: 5px;
+          }
+  
+          p {
+            letter-spacing: 3px;
+            font-weight: 700;
+            font-size: 3rem;
+          }
+        }
+      } 
 }
